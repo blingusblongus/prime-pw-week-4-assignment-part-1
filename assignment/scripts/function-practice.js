@@ -116,3 +116,14 @@ console.log('Test - should return empty array\n', onlyPositive([-3, -4, -5]));
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+//Write a function that repeats every letter in a string once:
+function doubleChar(str) {
+	let result = "";
+	for(let letter of str){
+		result += letter + letter;
+	}
+	return result;
+}
+
+console.log('Test - should say "HHeelllloo  WWoorrlldd!!"\n', doubleChar("Hello World!"));
