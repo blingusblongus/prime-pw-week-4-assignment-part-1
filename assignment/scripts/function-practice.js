@@ -100,7 +100,18 @@ console.log('Test - sums [4,7,8]\n', sumAll([4,7,8]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+function onlyPositive(array){
+  let result = [];
+  for(let el of array){
+    if(el >= 0){
+      result.push(el);
+    }
+  }
+  return result;
+}
 
+console.log('Test - should return positives of [3,-1,4,5,-15]\n', onlyPositive([3,-1,4,5,-15]));
+console.log('Test - should return empty array\n', onlyPositive([-3, -4, -5]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
