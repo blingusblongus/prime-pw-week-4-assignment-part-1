@@ -79,6 +79,7 @@ console.log('Test - should return true\n', find('pizza', ['lasagna', 'eggs', 'pi
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
+  return letter === string[0];
 
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
