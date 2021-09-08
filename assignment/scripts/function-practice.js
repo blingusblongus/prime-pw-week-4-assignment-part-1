@@ -59,12 +59,19 @@ function getLast( array ) {
 
 console.log('Test - should return undefined\n', getLast([]));
 console.log('Test - should return "pizza"\n', getLast(['lasagna', 'eggs', 'pizza']));
+
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
+  for(let el of array){
+    if(el === value) return true;
+  }
 
+  return false;
 }
+
+console.log('Test - should return true\n', find('pizza', ['lasagna', 'eggs', 'pizza']));
 
 // ----------------------
 // Stretch Goals
